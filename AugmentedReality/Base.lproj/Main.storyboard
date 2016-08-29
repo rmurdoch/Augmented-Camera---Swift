@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rxI-3q-fNG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ICU-Fp-Rck">
+            <objects>
+                <viewController id="rxI-3q-fNG" customClass="ViewController" customModule="AugmentedReality" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2qx-6s-BKY"/>
+                        <viewControllerLayoutGuide type="bottom" id="NXe-cx-Mkd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UyD-7p-lID">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdB-Al-Ook">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnr-kq-3Zj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="i8U-zZ-aJ3"/>
+                                    <constraint firstAttribute="height" constant="30" id="t3c-NJ-9Aj"/>
+                                </constraints>
+                                <state key="normal" title="map"/>
+                                <connections>
+                                    <action selector="mapPressed:" destination="rxI-3q-fNG" eventType="touchUpInside" id="dWE-Ev-eh4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QdB-Al-Ook" firstAttribute="height" secondItem="UyD-7p-lID" secondAttribute="height" id="0VU-Nl-nTC"/>
+                            <constraint firstItem="dnr-kq-3Zj" firstAttribute="centerX" secondItem="UyD-7p-lID" secondAttribute="centerX" id="8GR-DQ-375"/>
+                            <constraint firstItem="dnr-kq-3Zj" firstAttribute="centerY" secondItem="UyD-7p-lID" secondAttribute="centerY" id="EvP-Jn-tnc"/>
+                            <constraint firstItem="QdB-Al-Ook" firstAttribute="centerY" secondItem="UyD-7p-lID" secondAttribute="centerY" id="g7x-B4-gga"/>
+                            <constraint firstItem="QdB-Al-Ook" firstAttribute="width" secondItem="UyD-7p-lID" secondAttribute="width" id="uLb-Gh-Fpl"/>
+                            <constraint firstItem="QdB-Al-Ook" firstAttribute="centerX" secondItem="UyD-7p-lID" secondAttribute="centerX" id="y0k-Lc-ynU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="overlayView" destination="QdB-Al-Ook" id="aFd-YR-Wbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKS-Q8-4wU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="139"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Pww-Iw-YHr">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="7XI-pp-3HZ" customClass="MapViewController" customModule="AugmentedReality" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p0r-o0-vDp"/>
+                        <viewControllerLayoutGuide type="bottom" id="RU9-bD-J9H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FoV-fg-gZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2s-6M-B3w">
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="7XI-pp-3HZ" id="9U8-ts-LKW"/>
+                                    <outletCollection property="gestureRecognizers" destination="M2I-Ua-PYF" appends="YES" id="lgE-gj-USg"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFy-hD-NGN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="8Ms-OJ-ngY"/>
+                                    <constraint firstAttribute="height" constant="30" id="KZt-px-sKq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="7XI-pp-3HZ" eventType="touchUpInside" id="fes-uV-4BZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y2s-6M-B3w" firstAttribute="centerY" secondItem="FoV-fg-gZW" secondAttribute="centerY" id="Kxx-pg-Kr1"/>
+                            <constraint firstItem="eFy-hD-NGN" firstAttribute="leading" secondItem="FoV-fg-gZW" secondAttribute="leadingMargin" id="TAz-P1-jiE"/>
+                            <constraint firstItem="y2s-6M-B3w" firstAttribute="centerX" secondItem="FoV-fg-gZW" secondAttribute="centerX" id="fw2-kh-8vI"/>
+                            <constraint firstItem="eFy-hD-NGN" firstAttribute="top" secondItem="p0r-o0-vDp" secondAttribute="bottom" constant="8" id="jCW-fj-cvK"/>
+                            <constraint firstItem="y2s-6M-B3w" firstAttribute="height" secondItem="FoV-fg-gZW" secondAttribute="height" id="mUb-JI-kdf"/>
+                            <constraint firstItem="y2s-6M-B3w" firstAttribute="width" secondItem="FoV-fg-gZW" secondAttribute="width" id="qcu-ho-Sfp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="y2s-6M-B3w" id="HjI-Xy-lqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvZ-LV-Pws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="M2I-Ua-PYF">
+                    <connections>
+                        <action selector="addAnnotationWithGestureRecognizer:" destination="7XI-pp-3HZ" id="46Z-G6-8Rk"/>
+                        <outlet property="delegate" destination="y2s-6M-B3w" id="PVJ-b3-rAr"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

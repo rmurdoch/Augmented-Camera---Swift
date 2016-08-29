@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB2623DF1D71F539005C9F7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2623DE1D71F539005C9F7C /* AppDelegate.swift */; };
+		DB2623E11D71F539005C9F7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2623E01D71F539005C9F7C /* ViewController.swift */; };
+		DB2623E41D71F539005C9F7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2623E21D71F539005C9F7C /* Main.storyboard */; };
+		DB2623E91D71F539005C9F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2623E81D71F539005C9F7C /* Assets.xcassets */; };
+		DB2623EC1D71F539005C9F7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2623EA1D71F539005C9F7C /* LaunchScreen.storyboard */; };
+		DB2624021D71F691005C9F7C /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2624011D71F691005C9F7C /* Coordinate.swift */; };
+		DB2624041D722DB0005C9F7C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2624031D722DB0005C9F7C /* Constants.swift */; };
+		DB3380EB1D74EAA10098CDD9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3380EA1D74EAA10098CDD9 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB2623F31D71F539005C9F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB2623D31D71F539005C9F7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB2623DA1D71F539005C9F7C;
+			remoteInfo = AugmentedReality;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB2623DB1D71F539005C9F7C /* AugmentedReality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedReality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2623DE1D71F539005C9F7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB2623E01D71F539005C9F7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB2623E31D71F539005C9F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB2623E81D71F539005C9F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB2623EB1D71F539005C9F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB2623ED1D71F539005C9F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2623F21D71F539005C9F7C /* AugmentedRealityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugmentedRealityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2624011D71F691005C9F7C /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		DB2624031D722DB0005C9F7C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB3380EA1D74EAA10098CDD9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB2623D81D71F539005C9F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2623EF1D71F539005C9F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB2623D21D71F539005C9F7C = {
+			isa = PBXGroup;
+			children = (
+				DB2623DD1D71F539005C9F7C /* AugmentedReality */,
+				DB2623DC1D71F539005C9F7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB2623DC1D71F539005C9F7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB2623DB1D71F539005C9F7C /* AugmentedReality.app */,
+				DB2623F21D71F539005C9F7C /* AugmentedRealityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB2623DD1D71F539005C9F7C /* AugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				DB2623DE1D71F539005C9F7C /* AppDelegate.swift */,
+				DB2623E01D71F539005C9F7C /* ViewController.swift */,
+				DB2624011D71F691005C9F7C /* Coordinate.swift */,
+				DB2624031D722DB0005C9F7C /* Constants.swift */,
+				DB3380EA1D74EAA10098CDD9 /* MapViewController.swift */,
+				DB2623E21D71F539005C9F7C /* Main.storyboard */,
+				DB2623E81D71F539005C9F7C /* Assets.xcassets */,
+				DB2623EA1D71F539005C9F7C /* LaunchScreen.storyboard */,
+				DB2623ED1D71F539005C9F7C /* Info.plist */,
+			);
+			path = AugmentedReality;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB2623DA1D71F539005C9F7C /* AugmentedReality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2623FB1D71F539005C9F7C /* Build configuration list for PBXNativeTarget "AugmentedReality" */;
+			buildPhases = (
+				DB2623D71D71F539005C9F7C /* Sources */,
+				DB2623D81D71F539005C9F7C /* Frameworks */,
+				DB2623D91D71F539005C9F7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AugmentedReality;
+			productName = AugmentedReality;
+			productReference = DB2623DB1D71F539005C9F7C /* AugmentedReality.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB2623F11D71F539005C9F7C /* AugmentedRealityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2623FE1D71F539005C9F7C /* Build configuration list for PBXNativeTarget "AugmentedRealityTests" */;
+			buildPhases = (
+				DB2623EE1D71F539005C9F7C /* Sources */,
+				DB2623EF1D71F539005C9F7C /* Frameworks */,
+				DB2623F01D71F539005C9F7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB2623F41D71F539005C9F7C /* PBXTargetDependency */,
+			);
+			name = AugmentedRealityTests;
+			productName = AugmentedRealityTests;
+			productReference = DB2623F21D71F539005C9F7C /* AugmentedRealityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB2623D31D71F539005C9F7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Andrew Murdoch";
+				TargetAttributes = {
+					DB2623DA1D71F539005C9F7C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NHBAPS5Y75;
+						ProvisioningStyle = Automatic;
+					};
+					DB2623F11D71F539005C9F7C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NHBAPS5Y75;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB2623DA1D71F539005C9F7C;
+					};
+				};
+			};
+			buildConfigurationList = DB2623D61D71F539005C9F7C /* Build configuration list for PBXProject "AugmentedReality" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB2623D21D71F539005C9F7C;
+			productRefGroup = DB2623DC1D71F539005C9F7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB2623DA1D71F539005C9F7C /* AugmentedReality */,
+				DB2623F11D71F539005C9F7C /* AugmentedRealityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB2623D91D71F539005C9F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2623EC1D71F539005C9F7C /* LaunchScreen.storyboard in Resources */,
+				DB2623E91D71F539005C9F7C /* Assets.xcassets in Resources */,
+				DB2623E41D71F539005C9F7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2623F01D71F539005C9F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB2623D71D71F539005C9F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2624041D722DB0005C9F7C /* Constants.swift in Sources */,
+				DB3380EB1D74EAA10098CDD9 /* MapViewController.swift in Sources */,
+				DB2623E11D71F539005C9F7C /* ViewController.swift in Sources */,
+				DB2623DF1D71F539005C9F7C /* AppDelegate.swift in Sources */,
+				DB2624021D71F691005C9F7C /* Coordinate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2623EE1D71F539005C9F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB2623F41D71F539005C9F7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB2623DA1D71F539005C9F7C /* AugmentedReality */;
+			targetProxy = DB2623F31D71F539005C9F7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB2623E21D71F539005C9F7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB2623E31D71F539005C9F7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB2623EA1D71F539005C9F7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB2623EB1D71F539005C9F7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB2623F91D71F539005C9F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB2623FA1D71F539005C9F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB2623FC1D71F539005C9F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NHBAPS5Y75;
+				INFOPLIST_FILE = AugmentedReality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RAM4LLC.AugmentedReality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB2623FD1D71F539005C9F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NHBAPS5Y75;
+				INFOPLIST_FILE = AugmentedReality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RAM4LLC.AugmentedReality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DB2623FF1D71F539005C9F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NHBAPS5Y75;
+				INFOPLIST_FILE = AugmentedRealityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RAM4LLC.AugmentedRealityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AugmentedReality.app/AugmentedReality";
+			};
+			name = Debug;
+		};
+		DB2624001D71F539005C9F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NHBAPS5Y75;
+				INFOPLIST_FILE = AugmentedRealityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RAM4LLC.AugmentedRealityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AugmentedReality.app/AugmentedReality";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB2623D61D71F539005C9F7C /* Build configuration list for PBXProject "AugmentedReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2623F91D71F539005C9F7C /* Debug */,
+				DB2623FA1D71F539005C9F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2623FB1D71F539005C9F7C /* Build configuration list for PBXNativeTarget "AugmentedReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2623FC1D71F539005C9F7C /* Debug */,
+				DB2623FD1D71F539005C9F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2623FE1D71F539005C9F7C /* Build configuration list for PBXNativeTarget "AugmentedRealityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2623FF1D71F539005C9F7C /* Debug */,
+				DB2624001D71F539005C9F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB2623D31D71F539005C9F7C /* Project object */;
+}
